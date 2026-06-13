@@ -347,18 +347,23 @@ h3 {
     align-items: flex-end;
     padding: calc(var(--header-h) + 48px) 0 clamp(56px, 10vw, 96px);
     overflow: hidden;
+    background: var(--cave-deep);
 }
 
 .hero__media {
     position: absolute;
     inset: 0;
     z-index: 0;
+    background: var(--cave-deep);
 }
 
 .hero__video {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
 }
 
 .hero__overlay {
@@ -645,8 +650,14 @@ h3 {
     position: relative;
     min-height: 200px;
     aspect-ratio: 16 / 10;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+}
+
+.course-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .course-card__body {
@@ -717,8 +728,11 @@ h3 {
 }
 
 .work-tile__img {
-    min-height: 160px;
-    border-radius: 0;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .work-tile__cap {
@@ -747,6 +761,18 @@ h3 {
     display: grid;
     gap: 36px;
     align-items: center;
+}
+
+.about__photo {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin-inline: auto;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
+    box-shadow: var(--shadow);
 }
 
 .about__text p {
