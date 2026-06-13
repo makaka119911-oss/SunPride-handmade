@@ -2,6 +2,15 @@
     const year = document.getElementById('year');
     if (year) year.textContent = String(new Date().getFullYear());
 
+    const header = document.getElementById('header');
+    if (header) {
+        const onScroll = () => {
+            header.classList.toggle('header--solid', window.scrollY > 48);
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
     const burger = document.querySelector('.burger');
     const mobileNav = document.getElementById('mobileNav');
 
@@ -43,4 +52,11 @@
             }, 400);
         });
     });
+
+    const heroVideo = document.querySelector('.hero__video');
+    if (heroVideo) {
+        heroVideo.play().catch(() => {
+            /* autoplay blocked — gradient fallback in CSS */
+        });
+    }
 })();

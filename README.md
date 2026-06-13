@@ -35,10 +35,17 @@ Push в `main` → GitHub Pages (ветка `main`, папка `/`).
 
 ## Статус MVP
 
-- [x] Макет лендинга, 3 карточки курсов (заглушки «Видео скоро»)
-- [x] Кнопка «Хочу на старт» → Telegram @Tan4ik77G с текстом
+- [x] Макет лендинга, 3 карточки курсов
+- [x] Кнопка «Хочу на старт» → Telegram @Tan4ik77G
+- [x] **Редизайн v2** — Beatus-палитра + бордо/лаванда/фиолет, видео hero, логотип без ☀️
 - [ ] Реальные фото из VK/TG вместо placeholder-градиентов
-- [ ] Видеохостинг (Kinescope / Vimeo)
 - [ ] Оплата (ЮKassa / Prodamus / GetCourse)
+
+### Дизайн v2 (2026-06-13)
+
+Референс: https://www.beatushoehlen.swiss/en/ — полноэкранный hero, тёмные секции, 3 колонки.
+
+- Шрифты: Jost + Fraunces
+- Видео: `assets/video/hero.mp4` (~20 МБ)
 
 Карточка проекта в Obsidian: `Проекты/SunPride-handmade.md`

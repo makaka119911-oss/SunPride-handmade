@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun Pride Macramé — мастер-классы и изделия ручной работы</title>
-    <meta name="description" content="Макраме Sun Pride: видео мастер-классы, эксклюзивные изделия ручной работы. Ощути себя Богиней.">
+    <meta name="description" content="Макрамé Sun Pride: видео мастер-классы, эксклюзивные изделия ручной работы. Ощути себя Богиней.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=1">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container header__inner">
             <a class="logo" href="#top">
-                <span class="logo__sun" aria-hidden="true">☀️</span>
+                <img class="logo__mark" src="assets/img/logo-mark.svg" width="40" height="40" alt="">
                 <span class="logo__text">
                     <span class="logo__title">Sun Pride</span>
                     <span class="logo__sub">Macramé</span>
@@ -27,7 +27,7 @@
                 <a href="#about">О мастере</a>
                 <a href="#contact">Связь</a>
             </nav>
-            <a class="btn btn--primary btn--sm header__cta" href="#courses">Смотреть курсы</a>
+            <a class="btn btn--accent btn--sm header__cta" href="#courses">Смотреть курсы</a>
             <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobileNav">
                 <span></span><span></span><span></span>
             </button>
@@ -42,48 +42,61 @@
 
     <main id="top">
         <section class="hero">
-            <div class="hero__texture" aria-hidden="true"></div>
-            <div class="container hero__grid">
-                <div class="hero__copy">
-                    <p class="eyebrow">Макраме ручной работы · с 2023</p>
-                    <h1>Ощути себя <em>Богиней</em></h1>
-                    <p class="hero__lead">Видео мастер-классы по изделиям в стиле макраме — от нежных комплектов с бахромой до платьев для фотосессий и вечеринок у моря.</p>
-                    <div class="hero__actions">
-                        <a class="btn btn--primary" href="#courses">Мастер-классы</a>
-                        <a class="btn btn--ghost" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея во ВКонтакте</a>
-                    </div>
-                    <div class="hero__social">
-                        <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
-                        <span aria-hidden="true">·</span>
-                        <a href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
-                    </div>
-                </div>
-                <div class="hero__visual">
-                    <div class="hero-card hero-card--main">
-                        <div class="placeholder-media placeholder-media--tall">
-                            <span class="placeholder-media__badge">Скоро · видео</span>
-                            <span class="placeholder-media__label">Комплект с бахромой</span>
-                        </div>
-                    </div>
-                    <div class="hero-card hero-card--side">
-                        <div class="placeholder-media placeholder-media--square">
-                            <span class="placeholder-media__label">Платье</span>
-                        </div>
-                    </div>
+            <div class="hero__media" aria-hidden="true">
+                <video class="hero__video" autoplay muted loop playsinline poster="">
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="container hero__content">
+                <p class="eyebrow">Макрамé ручной работы · с 2023</p>
+                <h1>Ощути себя <em>Богиней</em></h1>
+                <p class="hero__lead">Видео мастер-классы по изделиям в стиле макраме — от нежных комплектов с бахромой до платьев для фотосессий и вечеринок у моря.</p>
+                <ul class="hero__actions">
+                    <li><a class="btn btn--accent btn--lg" href="#courses">Мастер-классы</a></li>
+                    <li><a class="btn btn--outline btn--lg" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея ВКонтакте</a></li>
+                </ul>
+                <div class="hero__social">
+                    <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    <span aria-hidden="true">·</span>
+                    <a href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="courses">
+        <section class="pillars section--deep" aria-label="Быстрые ссылки">
+            <div class="container pillars__grid">
+                <article class="pillar-card">
+                    <p class="pillar-card__label">Обучение</p>
+                    <h2 class="pillar-card__title">Мастер-классы</h2>
+                    <p class="pillar-card__text">Видеоуроки с PDF-схемами и списком материалов — учитесь в своём темпе.</p>
+                    <a class="pillar-card__link" href="#courses">Смотреть курсы</a>
+                </article>
+                <article class="pillar-card">
+                    <p class="pillar-card__label">Портфолио</p>
+                    <h2 class="pillar-card__title">Галерея работ</h2>
+                    <p class="pillar-card__text">Платья, комплекты и образы — каждая нить с любовью и вниманием к детали.</p>
+                    <a class="pillar-card__link" href="#works">Примеры изделий</a>
+                </article>
+                <article class="pillar-card">
+                    <p class="pillar-card__label">На заказ</p>
+                    <h2 class="pillar-card__title">Индивидуальный пошив</h2>
+                    <p class="pillar-card__text">Эксклюзивные образы под вашу фигуру, событие или фотосессию.</p>
+                    <a class="pillar-card__link" href="#contact">Написать мастеру</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--light" id="courses">
             <div class="container">
-                <header class="section-head">
-                    <p class="eyebrow">Обучение</p>
+                <header class="section-head section-head--center">
+                    <p class="eyebrow eyebrow--purple">Обучение</p>
                     <h2>Мастер-классы</h2>
-                    <p class="section-head__text">Видео в разработке — ниже заглушки будущих курсов. Можно оставить заявку, и мы напишем, когда откроется продажа.</p>
+                    <p class="section-head__text">Видео в разработке — ниже будущие курсы. Оставьте заявку, и мы напишем, когда откроется продажа.</p>
                 </header>
                 <div class="course-grid">
                     <article class="course-card">
-                        <div class="course-card__media placeholder-media placeholder-media--video">
+                        <div class="course-card__media placeholder-media placeholder-media--burgundy">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
                                 <span aria-hidden="true">▶</span>
                             </button>
@@ -99,12 +112,12 @@
                                 <li>Список материалов</li>
                             </ul>
                             <p class="course-card__price">Цена · уточняется</p>
-                            <button type="button" class="btn btn--secondary btn--block" data-waitlist="Комплект с бахромой">Хочу на старт</button>
+                            <button type="button" class="btn btn--primary btn--block" data-waitlist="Комплект с бахромой">Хочу на старт</button>
                         </div>
                     </article>
 
                     <article class="course-card">
-                        <div class="course-card__media placeholder-media placeholder-media--video placeholder-media--rose">
+                        <div class="course-card__media placeholder-media placeholder-media--lavender">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
                                 <span aria-hidden="true">▶</span>
                             </button>
@@ -120,12 +133,12 @@
                                 <li>Разбор узлов</li>
                             </ul>
                             <p class="course-card__price">Цена · уточняется</p>
-                            <button type="button" class="btn btn--secondary btn--block" data-waitlist="Платье с открытыми плечами">Хочу на старт</button>
+                            <button type="button" class="btn btn--primary btn--block" data-waitlist="Платье с открытыми плечами">Хочу на старт</button>
                         </div>
                     </article>
 
                     <article class="course-card">
-                        <div class="course-card__media placeholder-media placeholder-media--video placeholder-media--mesh">
+                        <div class="course-card__media placeholder-media placeholder-media--purple">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
                                 <span aria-hidden="true">▶</span>
                             </button>
@@ -134,51 +147,51 @@
                         <div class="course-card__body">
                             <p class="course-card__level">Скоро · продвинутый</p>
                             <h3>Сетка и многослойность</h3>
-                            <p>Макраме-сетка поверх платья или рубашки — минимализм и смелые многослойные образы.</p>
+                            <p>Макрамé-сетка поверх платья или рубашки — минимализм и смелые многослойные образы.</p>
                             <ul class="course-card__meta">
                                 <li>~5 уроков</li>
                                 <li>Комбинации слоёв</li>
                                 <li>Фестивальный стиль</li>
                             </ul>
                             <p class="course-card__price">Цена · уточняется</p>
-                            <button type="button" class="btn btn--secondary btn--block" data-waitlist="Сетка и многослойность">Хочу на старт</button>
+                            <button type="button" class="btn btn--primary btn--block" data-waitlist="Сетка и многослойность">Хочу на старт</button>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="section section--sand" id="works">
+        <section class="section section--deep" id="works">
             <div class="container">
                 <header class="section-head">
                     <p class="eyebrow">Портфолио</p>
                     <h2>Примеры работ</h2>
-                    <p class="section-head__text">Фото из каналов — полные галереи в Telegram и ВКонтакте.</p>
+                    <p class="section-head__text section-head__text--light">Фото из каналов — полные галереи в Telegram и ВКонтакте.</p>
                 </header>
                 <div class="works-grid">
                     <a class="work-tile" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">
-                        <div class="work-tile__img placeholder-media placeholder-media--gold"></div>
+                        <div class="work-tile__img placeholder-media placeholder-media--burgundy"></div>
                         <div class="work-tile__cap">
                             <h3>Золотой комплект</h3>
                             <p>Топ с воротником и пояс-юбка с бахромой</p>
                         </div>
                     </a>
                     <a class="work-tile" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">
-                        <div class="work-tile__img placeholder-media placeholder-media--beige"></div>
+                        <div class="work-tile__img placeholder-media placeholder-media--lavender"></div>
                         <div class="work-tile__cap">
                             <h3>Мама и дочка</h3>
                             <p>Комплекты с длинной бахромой в бежевом</p>
                         </div>
                     </a>
                     <a class="work-tile" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">
-                        <div class="work-tile__img placeholder-media placeholder-media--rose"></div>
+                        <div class="work-tile__img placeholder-media placeholder-media--purple"></div>
                         <div class="work-tile__cap">
                             <h3>Розовая нежность</h3>
                             <p>Топ и пояс-юбка с камушками</p>
                         </div>
                     </a>
                     <a class="work-tile" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">
-                        <div class="work-tile__img placeholder-media placeholder-media--red"></div>
+                        <div class="work-tile__img placeholder-media placeholder-media--wine"></div>
                         <div class="work-tile__cap">
                             <h3>Красный трансформер</h3>
                             <p>Пояс или юбка — два образа в одном</p>
@@ -186,13 +199,13 @@
                     </a>
                 </div>
                 <div class="works-cta">
-                    <a class="btn btn--primary" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram @macramesunpride</a>
-                    <a class="btn btn--ghost" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВК sunpride_handmade</a>
+                    <a class="btn btn--accent" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram @macramesunpride</a>
+                    <a class="btn btn--outline" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВК sunpride_handmade</a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="about">
+        <section class="section section--lavender" id="about">
             <div class="container about">
                 <div class="about__media">
                     <div class="placeholder-media placeholder-media--portrait">
@@ -200,7 +213,7 @@
                     </div>
                 </div>
                 <div class="about__text">
-                    <p class="eyebrow">О мастере</p>
+                    <p class="eyebrow eyebrow--purple">О мастере</p>
                     <h2>Магия в каждом узле</h2>
                     <p>Привет, меня зовут <strong>Татьяна Солнечная</strong>. Sun Pride Macramé — про яркость, свободу и женскую силу. Я плету платья, топы, эполеты и эксклюзивные образы на заказ — каждая нить с любовью и вниманием к детали.</p>
                     <p>Коллекция «Богини современности» создана, чтобы вы чувствовали уверенность на фотосессии, у моря или на особом вечере. Скоро здесь появятся видео мастер-классы — пока смотрите новые работы в соцсетях.</p>
@@ -214,7 +227,7 @@
             </div>
         </section>
 
-        <section class="section section--cta" id="contact">
+        <section class="section section--burgundy" id="contact">
             <div class="container contact-box">
                 <div>
                     <p class="eyebrow">Связь</p>
@@ -222,8 +235,8 @@
                     <p>Напишите в Telegram — ответим про мастер-классы, индивидуальный пошив и сроки.</p>
                 </div>
                 <div class="contact-box__actions">
-                    <a class="btn btn--primary btn--lg" href="https://t.me/Tan4ik77G" target="_blank" rel="noopener noreferrer">Написать @Tan4ik77G</a>
-                    <a class="btn btn--ghost btn--lg" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Канал в Telegram</a>
+                    <a class="btn btn--accent btn--lg" href="https://t.me/Tan4ik77G" target="_blank" rel="noopener noreferrer">Написать @Tan4ik77G</a>
+                    <a class="btn btn--outline btn--lg" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Канал в Telegram</a>
                 </div>
             </div>
         </section>
@@ -231,7 +244,7 @@
 
     <footer class="footer">
         <div class="container footer__inner">
-            <p class="footer__brand">☀️ Sun Pride Macramé</p>
+            <p class="footer__brand">Sun Pride Macramé</p>
             <p class="footer__copy">© <span id="year"></span> · Изделия и мастер-классы макраме</p>
             <div class="footer__links">
                 <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
@@ -242,6 +255,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="assets/js/main.js?v=1" defer></script>
+    <script src="assets/js/main.js?v=2" defer></script>
 </body>
 </html>
