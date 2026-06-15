@@ -7,8 +7,8 @@
     <meta name="description" content="Макрамé Sun Pride: видео мастер-классы, эксклюзивные изделия ручной работы. Ощути себя Богиней.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=4">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=5">
     <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -27,7 +27,7 @@
                 <a href="#about">О мастере</a>
                 <a href="#contact">Связь</a>
             </nav>
-            <a class="btn btn--accent btn--sm header__cta" href="#courses">Смотреть курсы</a>
+            <a class="btn btn--primary btn--sm header__cta" href="#courses">Смотреть курсы</a>
             <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobileNav">
                 <span></span><span></span><span></span>
             </button>
@@ -52,10 +52,10 @@
                 <p class="eyebrow">Макрамé ручной работы · с 2023</p>
                 <h1>Ощути себя <em>Богиней</em></h1>
                 <p class="hero__lead">Видео мастер-классы по изделиям в стиле макраме — от нежных комплектов с бахромой до платьев для фотосессий и вечеринок у моря.</p>
-                <ul class="hero__actions">
-                    <li><a class="btn btn--accent btn--lg" href="#courses">Мастер-классы</a></li>
-                    <li><a class="btn btn--outline btn--lg" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея ВКонтакте</a></li>
-                </ul>
+                <div class="hero__actions">
+                    <a class="btn btn--primary btn--lg" href="#courses">Мастер-классы</a>
+                    <a class="btn btn--ghost btn--lg" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея ВКонтакте</a>
+                </div>
                 <div class="hero__social">
                     <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
                     <span aria-hidden="true">·</span>
@@ -64,33 +64,10 @@
             </div>
         </section>
 
-        <section class="pillars section--deep" aria-label="Быстрые ссылки">
-            <div class="container pillars__grid">
-                <article class="pillar-card">
-                    <p class="pillar-card__label">Обучение</p>
-                    <h2 class="pillar-card__title">Мастер-классы</h2>
-                    <p class="pillar-card__text">Видеоуроки с PDF-схемами и списком материалов — учитесь в своём темпе.</p>
-                    <a class="pillar-card__link" href="#courses">Смотреть курсы</a>
-                </article>
-                <article class="pillar-card">
-                    <p class="pillar-card__label">Портфолио</p>
-                    <h2 class="pillar-card__title">Галерея работ</h2>
-                    <p class="pillar-card__text">Платья, комплекты и образы — каждая нить с любовью и вниманием к детали.</p>
-                    <a class="pillar-card__link" href="#works">Примеры изделий</a>
-                </article>
-                <article class="pillar-card">
-                    <p class="pillar-card__label">На заказ</p>
-                    <h2 class="pillar-card__title">Индивидуальный пошив</h2>
-                    <p class="pillar-card__text">Эксклюзивные образы под вашу фигуру, событие или фотосессию.</p>
-                    <a class="pillar-card__link" href="#contact">Написать мастеру</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="section section--light" id="courses">
+        <section class="section" id="courses">
             <div class="container">
                 <header class="section-head section-head--center">
-                    <p class="eyebrow eyebrow--purple">Обучение</p>
+                    <p class="eyebrow">Обучение</p>
                     <h2>Мастер-классы</h2>
                     <p class="section-head__text">Видео в разработке — ниже будущие курсы. Оставьте заявку, и мы напишем, когда откроется продажа.</p>
                 </header>
@@ -164,12 +141,12 @@
             </div>
         </section>
 
-        <section class="section section--deep" id="works">
+        <section class="section section--sand" id="works">
             <div class="container">
                 <header class="section-head">
                     <p class="eyebrow">Портфолио</p>
                     <h2>Примеры работ</h2>
-                    <p class="section-head__text section-head__text--light">Фото из каналов — полные галереи в Telegram и ВКонтакте.</p>
+                    <p class="section-head__text">Фото из каналов — полные галереи в Telegram и ВКонтакте.</p>
                 </header>
                 <div class="works-grid">
                     <a class="work-tile" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">
@@ -202,19 +179,19 @@
                     </a>
                 </div>
                 <div class="works-cta">
-                    <a class="btn btn--accent" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram @macramesunpride</a>
-                    <a class="btn btn--outline" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВК sunpride_handmade</a>
+                    <a class="btn btn--primary" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram @macramesunpride</a>
+                    <a class="btn btn--ghost" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВК sunpride_handmade</a>
                 </div>
             </div>
         </section>
 
-        <section class="section section--lavender" id="about">
+        <section class="section" id="about">
             <div class="container about">
                 <div class="about__media">
                     <img class="about__photo" src="assets/img/about-tatyana.jpg?v=2" alt="Татьяна Солнечная — мастер Sun Pride Macramé" loading="lazy" width="735" height="1103">
                 </div>
                 <div class="about__text">
-                    <p class="eyebrow eyebrow--purple">О мастере</p>
+                    <p class="eyebrow">О мастере</p>
                     <h2>Магия в каждом узле</h2>
                     <p>Привет, меня зовут <strong>Татьяна Солнечная</strong>. Sun Pride Macramé — про яркость, свободу и женскую силу. Я плету платья, топы, эполеты и эксклюзивные образы на заказ — каждая нить с любовью и вниманием к детали.</p>
                     <p>Коллекция «Богини современности» создана, чтобы вы чувствовали уверенность на фотосессии, у моря или на особом вечере. Скоро здесь появятся видео мастер-классы — пока смотрите новые работы в соцсетях.</p>
@@ -228,7 +205,7 @@
             </div>
         </section>
 
-        <section class="section section--burgundy" id="contact">
+        <section class="section section--cta" id="contact">
             <div class="container contact-box">
                 <div>
                     <p class="eyebrow">Связь</p>
@@ -236,8 +213,8 @@
                     <p>Напишите в Telegram — ответим про мастер-классы, индивидуальный пошив и сроки.</p>
                 </div>
                 <div class="contact-box__actions">
-                    <a class="btn btn--accent btn--lg" href="https://t.me/Tan4ik77G" target="_blank" rel="noopener noreferrer">Написать @Tan4ik77G</a>
-                    <a class="btn btn--outline btn--lg" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Канал в Telegram</a>
+                    <a class="btn btn--primary btn--lg" href="https://t.me/Tan4ik77G" target="_blank" rel="noopener noreferrer">Написать @Tan4ik77G</a>
+                    <a class="btn btn--ghost btn--lg" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Канал в Telegram</a>
                 </div>
             </div>
         </section>
