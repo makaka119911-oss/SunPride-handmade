@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=5">
+    <link rel="stylesheet" href="assets/css/style.css?v=6">
     <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -42,29 +42,63 @@
 
     <main id="top">
         <section class="hero">
-            <div class="hero__media" aria-hidden="true">
-                <video class="hero__video" autoplay muted loop playsinline poster="">
-                    <source src="assets/video/hero.mp4" type="video/mp4">
-                </video>
-                <div class="hero__overlay"></div>
-            </div>
-            <div class="container hero__content">
-                <p class="eyebrow">Макрамé ручной работы · с 2023</p>
-                <h1>Ощути себя <em>Богиней</em></h1>
-                <p class="hero__lead">Видео мастер-классы по изделиям в стиле макраме — от нежных комплектов с бахромой до платьев для фотосессий и вечеринок у моря.</p>
-                <div class="hero__actions">
-                    <a class="btn btn--primary btn--lg" href="#courses">Мастер-классы</a>
-                    <a class="btn btn--ghost btn--lg" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея ВКонтакте</a>
+            <div class="hero__glow" aria-hidden="true"></div>
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow hero__eyebrow">Макрамé ручной работы · с 2023</p>
+                    <h1>Ощути себя <em>Богиней</em></h1>
+                    <p class="hero__lead">Видео мастер-классы по изделиям в стиле макраме — от нежных комплектов с бахромой до платьев для фотосессий и вечеринок у моря.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary btn--lg" href="#courses">Мастер-классы</a>
+                        <a class="btn btn--ghost btn--lg" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">Галерея ВКонтакте</a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
+                        <span aria-hidden="true">·</span>
+                        <a href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                    </div>
                 </div>
-                <div class="hero__social">
-                    <a href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram</a>
-                    <span aria-hidden="true">·</span>
-                    <a href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+                <div class="hero__cinema">
+                    <div class="hero__frame">
+                        <video class="hero__video" autoplay muted loop playsinline>
+                            <source src="assets/video/hero.mp4" type="video/mp4">
+                        </video>
+                        <div class="hero__frame-shine" aria-hidden="true"></div>
+                    </div>
+                    <p class="hero__frame-label">Коллекция «Богини современности»</p>
+                </div>
+            </div>
+            <div class="hero__fringe" aria-hidden="true">
+                <svg class="hero__fringe-svg" viewBox="0 0 1200 48" preserveAspectRatio="none">
+                    <path class="hero__fringe-line hero__fringe-line--1" d="M0 8 Q300 28 600 8 T1200 8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <path class="hero__fringe-line hero__fringe-line--2" d="M0 20 Q300 40 600 20 T1200 20" fill="none" stroke="currentColor" stroke-width="1"/>
+                    <path class="hero__fringe-line hero__fringe-line--3" d="M0 32 Q300 12 600 32 T1200 32" fill="none" stroke="currentColor" stroke-width="1"/>
+                </svg>
+            </div>
+            <a class="hero__scroll" href="#stats" aria-label="Листайте вниз">
+                <span class="hero__scroll-text">листайте</span>
+                <span class="hero__scroll-chevron"></span>
+            </a>
+        </section>
+
+        <section class="stats" id="stats" aria-label="О бренде">
+            <div class="container stats__grid">
+                <div class="stats__item" data-reveal>
+                    <strong class="stats__num">2023</strong>
+                    <span class="stats__label">год основания Sun Pride</span>
+                </div>
+                <div class="stats__item" data-reveal>
+                    <strong class="stats__num">100%</strong>
+                    <span class="stats__label">ручная работа · каждый узел</span>
+                </div>
+                <div class="stats__item" data-reveal>
+                    <strong class="stats__num">∞</strong>
+                    <span class="stats__label">образы на заказ и у моря</span>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="courses">
+        <section class="section" id="courses" data-reveal>
             <div class="container">
                 <header class="section-head section-head--center">
                     <p class="eyebrow">Обучение</p>
@@ -72,7 +106,7 @@
                     <p class="section-head__text">Видео в разработке — ниже будущие курсы. Оставьте заявку, и мы напишем, когда откроется продажа.</p>
                 </header>
                 <div class="course-grid">
-                    <article class="course-card">
+                    <article class="course-card" data-reveal>
                         <div class="course-card__media">
                             <img src="assets/img/courses/course-bahroma.jpg?v=2" alt="Комплект с бахромой — макраме Sun Pride" loading="lazy" width="333" height="400">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
@@ -94,7 +128,7 @@
                         </div>
                     </article>
 
-                    <article class="course-card">
+                    <article class="course-card" data-reveal>
                         <div class="course-card__media">
                             <img src="assets/img/courses/course-dress.jpg?v=2" alt="Платье с открытыми плечами — макраме Sun Pride" loading="lazy" width="333" height="400">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
@@ -116,7 +150,7 @@
                         </div>
                     </article>
 
-                    <article class="course-card">
+                    <article class="course-card" data-reveal>
                         <div class="course-card__media">
                             <img src="assets/img/courses/course-mesh.jpg?v=2" alt="Макраме-сетка и многослойность — Sun Pride" loading="lazy" width="333" height="400">
                             <button type="button" class="play-fake" disabled aria-label="Видео скоро">
@@ -148,35 +182,51 @@
                     <h2>Примеры работ</h2>
                     <p class="section-head__text">Фото из каналов — полные галереи в Telegram и ВКонтакте.</p>
                 </header>
-                <div class="works-grid">
-                    <a class="work-tile" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">
-                        <img class="work-tile__img" src="assets/img/works/work-gold-set.jpg?v=2" alt="Золотой комплект макраме" loading="lazy" width="333" height="400">
-                        <div class="work-tile__cap">
-                            <h3>Золотой комплект</h3>
-                            <p>Топ с воротником и пояс-юбка с бахромой</p>
-                        </div>
-                    </a>
-                    <a class="work-tile" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">
-                        <img class="work-tile__img" src="assets/img/works/work-mama-daughter.jpg?v=2" alt="Комплекты мама и дочка" loading="lazy" width="1080" height="1080">
-                        <div class="work-tile__cap">
-                            <h3>Мама и дочка</h3>
-                            <p>Комплекты с длинной бахромой в бежевом</p>
-                        </div>
-                    </a>
-                    <a class="work-tile" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">
-                        <img class="work-tile__img" src="assets/img/works/work-pink.jpg?v=2" alt="Розовый комплект макраме" loading="lazy" width="1080" height="1080">
-                        <div class="work-tile__cap">
+                <div class="works-grid works-grid--showcase">
+                    <figure class="work-tile work-tile--feature" data-reveal>
+                        <button type="button" class="work-tile__zoom" data-lightbox="assets/img/works/work-pink.jpg?v=2" data-caption="Розовая нежность — топ и пояс-юбка с камушками">
+                            <img class="work-tile__img" src="assets/img/works/work-pink.jpg?v=2" alt="Розовый комплект макраме" loading="lazy" width="1080" height="1080">
+                            <span class="work-tile__lens" aria-hidden="true">⊕</span>
+                        </button>
+                        <figcaption class="work-tile__cap">
                             <h3>Розовая нежность</h3>
                             <p>Топ и пояс-юбка с камушками</p>
-                        </div>
-                    </a>
-                    <a class="work-tile" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">
-                        <img class="work-tile__img" src="assets/img/works/work-red.jpg?v=2" alt="Красный трансформер макраме" loading="lazy" width="333" height="400">
-                        <div class="work-tile__cap">
+                            <a class="work-tile__link" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">В Telegram →</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-tile" data-reveal>
+                        <button type="button" class="work-tile__zoom" data-lightbox="assets/img/works/work-gold-set.jpg?v=2" data-caption="Золотой комплект — топ с воротником и пояс-юбка с бахромой">
+                            <img class="work-tile__img" src="assets/img/works/work-gold-set.jpg?v=2" alt="Золотой комплект макраме" loading="lazy" width="333" height="400">
+                            <span class="work-tile__lens" aria-hidden="true">⊕</span>
+                        </button>
+                        <figcaption class="work-tile__cap">
+                            <h3>Золотой комплект</h3>
+                            <p>Топ с воротником и пояс-юбка с бахромой</p>
+                            <a class="work-tile__link" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте →</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-tile" data-reveal>
+                        <button type="button" class="work-tile__zoom" data-lightbox="assets/img/works/work-mama-daughter.jpg?v=2" data-caption="Мама и дочка — комплекты с длинной бахромой в бежевом">
+                            <img class="work-tile__img" src="assets/img/works/work-mama-daughter.jpg?v=2" alt="Комплекты мама и дочка" loading="lazy" width="1080" height="1080">
+                            <span class="work-tile__lens" aria-hidden="true">⊕</span>
+                        </button>
+                        <figcaption class="work-tile__cap">
+                            <h3>Мама и дочка</h3>
+                            <p>Комплекты с длинной бахромой в бежевом</p>
+                            <a class="work-tile__link" href="https://vk.com/sunpride_handmade" target="_blank" rel="noopener noreferrer">ВКонтакте →</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="work-tile" data-reveal>
+                        <button type="button" class="work-tile__zoom" data-lightbox="assets/img/works/work-red.jpg?v=2" data-caption="Красный трансформер — пояс или юбка, два образа">
+                            <img class="work-tile__img" src="assets/img/works/work-red.jpg?v=2" alt="Красный трансформер макраме" loading="lazy" width="333" height="400">
+                            <span class="work-tile__lens" aria-hidden="true">⊕</span>
+                        </button>
+                        <figcaption class="work-tile__cap">
                             <h3>Красный трансформер</h3>
                             <p>Пояс или юбка — два образа в одном</p>
-                        </div>
-                    </a>
+                            <a class="work-tile__link" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram →</a>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="works-cta">
                     <a class="btn btn--primary" href="https://t.me/macramesunpride" target="_blank" rel="noopener noreferrer">Telegram @macramesunpride</a>
@@ -231,8 +281,21 @@
         </div>
     </footer>
 
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Галерея работ" hidden>
+        <div class="lightbox__backdrop" data-lightbox-close></div>
+        <button type="button" class="lightbox__close" data-lightbox-close aria-label="Закрыть">×</button>
+        <button type="button" class="lightbox__nav lightbox__nav--prev" data-lightbox-prev aria-label="Предыдущее">‹</button>
+        <button type="button" class="lightbox__nav lightbox__nav--next" data-lightbox-next aria-label="Следующее">›</button>
+        <figure class="lightbox__stage">
+            <div class="lightbox__frame">
+                <img class="lightbox__img" src="" alt="">
+            </div>
+            <figcaption class="lightbox__caption"></figcaption>
+        </figure>
+    </div>
+
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="assets/js/main.js?v=3" defer></script>
+    <script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
