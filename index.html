@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css?v=5">
+    <link rel="stylesheet" href="assets/css/style.css?v=6">
     <link rel="icon" href="assets/img/logo-mark.svg" type="image/svg+xml">
 </head>
 <body>
@@ -43,7 +43,10 @@
     <main id="top">
         <section class="hero">
             <div class="hero__media" aria-hidden="true">
-                <video class="hero__video" autoplay muted loop playsinline poster="">
+                <video class="hero__video hero__video--bg" autoplay muted loop playsinline>
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
+                <video class="hero__video hero__video--fg" autoplay muted loop playsinline>
                     <source src="assets/video/hero.mp4" type="video/mp4">
                 </video>
                 <div class="hero__overlay"></div>
@@ -64,7 +67,7 @@
             </div>
         </section>
 
-        <section class="section" id="courses">
+        <section class="section reveal" id="courses">
             <div class="container">
                 <header class="section-head section-head--center">
                     <p class="eyebrow">Обучение</p>
@@ -141,7 +144,7 @@
             </div>
         </section>
 
-        <section class="section section--sand" id="works">
+        <section class="section section--sand reveal" id="works">
             <div class="container">
                 <header class="section-head">
                     <p class="eyebrow">Портфолио</p>
@@ -185,7 +188,7 @@
             </div>
         </section>
 
-        <section class="section" id="about">
+        <section class="section reveal" id="about">
             <div class="container about">
                 <div class="about__media">
                     <img class="about__photo" src="assets/img/about-tatyana.jpg?v=2" alt="Татьяна Солнечная — мастер Sun Pride Macramé" loading="lazy" width="735" height="1103">
@@ -205,7 +208,7 @@
             </div>
         </section>
 
-        <section class="section section--cta" id="contact">
+        <section class="section section--cta reveal" id="contact">
             <div class="container contact-box">
                 <div>
                     <p class="eyebrow">Связь</p>
@@ -233,6 +236,6 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-    <script src="assets/js/main.js?v=3" defer></script>
+    <script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
