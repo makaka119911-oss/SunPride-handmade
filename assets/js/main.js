@@ -71,10 +71,32 @@
                     }
                 });
             },
-            { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+            { threshold: 0.1, rootMargin: '0px 0px -32px 0px' }
         );
         revealEls.forEach((el) => observer.observe(el));
     } else {
         revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+
+    const navLinks = document.querySelectorAll('.nav a, .mobile-nav a');
+    const sections = ['courses', 'works', 'about', 'contact']
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
+
+    if (navLinks.length && sections.length && 'IntersectionObserver' in window) {
+        const navObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    const id = entry.target.id;
+                    navLinks.forEach((link) => {
+                        const match = link.getAttribute('href') === `#${id}`;
+                        link.classList.toggle('nav--active', match);
+                    });
+                });
+            },
+            { threshold: 0.35, rootMargin: '-20% 0px -55% 0px' }
+        );
+        sections.forEach((section) => navObserver.observe(section));
     }
 })();
