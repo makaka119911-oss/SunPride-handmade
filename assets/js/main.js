@@ -15,18 +15,24 @@
     const mobileNav = document.getElementById('mobileNav');
 
     if (burger && mobileNav) {
+        const setNavOpen = (open) => {
+            burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+            mobileNav.hidden = !open;
+            document.body.classList.toggle('nav-open', open);
+        };
+
         burger.addEventListener('click', () => {
             const open = burger.getAttribute('aria-expanded') === 'true';
-            burger.setAttribute('aria-expanded', open ? 'false' : 'true');
-            mobileNav.hidden = open;
+            setNavOpen(!open);
         });
 
         mobileNav.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => {
-                burger.setAttribute('aria-expanded', 'false');
-                mobileNav.hidden = true;
-            });
+            link.addEventListener('click', () => setNavOpen(false));
         });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) setNavOpen(false);
+        }, { passive: true });
     }
 
     const toast = document.getElementById('toast');
