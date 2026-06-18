@@ -14,38 +14,28 @@
 
 ## Стек
 
-Статика: `index.html` + `assets/css/style.css` + `assets/js/main.js` — без сборки.
+Статика: `index.html` + `assets/` + `DESIGN.md` — без сборки.
 
-## Локальный просмотр
+## Настройка
 
-```powershell
-cd SunPride-handmade
-python -m http.server 3010
-```
+**Яндекс.Метрика:** в `assets/js/site-config.js` вставить `yandexMetrikaId: 'XXXXXX'`.
 
-Открыть http://127.0.0.1:3010
+**Превью курса:** на `.play-btn` задать `data-video-url="..."`, убрать `data-video-soon`.
 
-Или: `Agents\preview-sunpride.ps1`
+**Оптимизация медиа:** `python scripts/optimize-assets.py` (WebP, иконки PWA, poster).
+
+## PWA
+
+`manifest.webmanifest` + `apple-touch-icon.png` — «На экран Домой» на iPhone.
 
 ## Деплой
 
-Push в `main` → GitHub Pages (ветка `main`, папка `/`).
+Push в `main` → GitHub Pages. После правок — поднять `?v=` в `index.html`.
 
-После правок CSS/JS — поднять `?v=` в `index.html` для сброса кэша.
+## Статус
 
-## Статус MVP
-
-- [x] Макет лендинга, 3 карточки курсов
-- [x] Кнопка «Хочу на старт» → Telegram @Tan4ik77G
-- [x] **Редизайн v2** — Beatus-палитра + бордо/лаванда/фиолет, видео hero, логотип без ☀️
-- [ ] Реальные фото из VK/TG вместо placeholder-градиентов
-- [ ] Оплата (ЮKassa / Prodamus / GetCourse)
-
-### Дизайн v2 (2026-06-13)
-
-Референс: https://www.beatushoehlen.swiss/en/ — полноэкранный hero, тёмные секции, 3 колонки.
-
-- Шрифты: Jost + Fraunces
-- Видео: `assets/video/hero.mp4` (~20 МБ)
-
-Карточка проекта в Obsidian: `Проекты/SunPride-handmade.md`
+- [x] Editorial v7–v9: lightbox, sticky TG, отзывы, «Как заказать», WebP, lazy hero
+- [x] Реальные фото VK, hero video (~5 МБ)
+- [ ] Metrika ID от владельца
+- [ ] Реальные отзывы (заменить шаблонные)
+- [ ] Оплата курсов
